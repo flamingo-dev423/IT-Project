@@ -9,7 +9,7 @@
       >
         <div class="flex items-center justify-between px-4 py-6 sm:p-0">
           <div>
-            <img src="../assets/fylo.svg" class="h-5 md:h-8" alt="" />
+            <img src="../assets/fylo.svg" class="h-4 mt-3 md:mt-0 md:h-8" alt="" />
           </div>
           <div class="sm:hidden">
             <button
@@ -48,8 +48,13 @@
           >
           <a
             href="/services"
-            class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl"
+            class="mt-1 block px-2 py-1 text-gray-400 font-semibold md:text-xl hover:text-white"
             >Services</a
+          >
+          <a
+            href="/about"
+            class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl"
+            >About Us</a
           >
           <!-- <a
             href="/register"
@@ -97,7 +102,7 @@
         </h1>
       </div>
       <div
-        class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-8 mb-12"
+        class="md:p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-8 mb-12"
       >
         <div class="grid grid-cols-2 gap-6">
           <img
@@ -135,8 +140,8 @@
             <p
               class="text-xs md:text-lg lg:text-xl text-gray-500 font-normal tracking-wider leading-tight"
             >
-              Signature New Zealand boasts ofthe best climates in New Zealand.
-              Visitirs can enjoy the 428-mile-long coastline year round, whether
+              Signature New Zealand boasts of the best climates in New Zealand.
+              Visitors can enjoy the 428-mile-long coastline year round, whether
               they choose fine white sand beaches or dark volcanic shores.
             </p>
           </div>
@@ -191,21 +196,21 @@
         </h1>
         <button
           @click="$router.push('virtual')"
-          class="bg-green-700 text-white uppercase tracking-wider px-12 py-4 hover:bg-transparent hover:border-green-700 hover:border-2 mt-6 text-lg hover:cursor-pointer"
+          class="bg-green-700 text-white uppercase tracking-wider px-12 py-3 md:py-4 hover:bg-transparent hover:border-green-700 hover:border-2 mt-6 text-sm md:text-lg hover:cursor-pointer"
         >
           Virtual Tour
         </button>
       </div>
 
       <carousel
-        :items-to-show="2.75"
+        :items-to-show="1.75"
         :autoplay="2000"
         :wrap-around="true"
         :transition="500"
       >
         <slide v-for="slide in slides" :key="slide">
           <div class="w-full h-full object-cover">
-            <img :src="slide.icon" class="rounded-sm" />
+            <img :src="slide.icon" class="rounded-md" />
           </div>
         </slide>
 
@@ -215,7 +220,7 @@
         </template>
       </carousel>
 
-      <div class="mt-24">
+      <div class="mt-16">
         <div class="">
           <h1
             class="capitalize font-semibold text-white text-2xl md:text-4xl mb-6"
@@ -243,7 +248,7 @@
               alt=""
             />
             <h1
-              class="text-xl md:text-2xl lg:text-3xl font-medium text-white tracking-wider text-center my-5"
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white tracking-wider text-center my-5"
             >
               Holiday Packages
             </h1>
@@ -254,7 +259,7 @@
             </p>
             <button
               @click="$router.push('holidayPackages')"
-              class="w-full px-8 py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
+              class="w-full px-8 py-2 md:py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
             >
               Learn More
             </button>
@@ -267,7 +272,7 @@
               alt=""
             />
             <h1
-              class="text-xl md:text-2xl lg:text-3xl font-medium text-white tracking-wider text-center my-5"
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white tracking-wider text-center my-5"
             >
               Ticketing and Reservation
             </h1>
@@ -278,7 +283,7 @@
             </p>
             <button
               @click="$router.push('ticketingReservation')"
-              class="w-full px-8 py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
+              class="w-full px-8 py-2 md:py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
             >
               Learn More
             </button>
@@ -291,7 +296,7 @@
               alt=""
             />
             <h1
-              class="text-xl md:text-2xl lg:text-3xl font-medium text-white tracking-wider text-center my-5"
+              class="text-xl md:text-2xl lg:text-3xl font-semibold text-white tracking-wider text-center my-5"
             >
               Travel Insurance
             </h1>
@@ -302,24 +307,31 @@
             </p>
             <button
               @click="$router.push('travelInsurance')"
-              class="w-full px-8 py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
+              class="w-full px-8 py-2 md:py-4 bg-green-700 text-white text-xl font-semibold hover:bg-transparent hover:border-green-700 hover:border-2"
             >
               Learn More
             </button>
           </div>
         </div>
       </div>
-
-      <div class="mt-24">
-        <p class="text-gray-400 text-xl tracking-wider font-light">
-          <span
-            class="text-xl md:text-2xl text-red-700 font-semibold tracking-wider"
-            >Fylo</span
-          >
-          travel & tours Inc.
-        </p>
-      </div>
     </div>
+    <div class="mt-10 pb-10 px-6 md:px-0 md:grid md:grid-cols-3 md:gap-3 bg-zinc-800">
+                <p class="text-gray-400 md:pl-16 md:w-96 pt-6 font-thin text-xs md:flex md:flex-col md:col-span-1 md:text-sm lg:text-base tracking-wider leading-tight">Welcome to your one stop travel platform where we love making your journey an experience. We would love to hear from you.</p>
+                <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Contact Information</h1>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">chat with us on Whatsapp : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">Speak to an agent : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">Need our support : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+            </div>
+            <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Useful Links</h1>
+                <div class="flex flex-col py-3">
+                <a href="/about" class="text-xs font-thin text-gray-400 tracking-wider mb-3">About Us</a>
+                <a href="/virtual" class="text-xs font-thin text-gray-400 tracking-wider">Virtual Tour</a>
+            </div>
+        </div>
+            </div>
+    
   </div>
 </template>
 
@@ -334,7 +346,7 @@ export default {
   name: "HomeView",
   methods: {
     Logout() {
-      console.log("Sign Oggut");
+      console.log("Sign Out");
       const auth = getAuth();
 
       const router = useRouter(); //get a reference to our router

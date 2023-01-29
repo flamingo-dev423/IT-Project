@@ -18,7 +18,12 @@
                 <nav :class="isOpen ? 'block' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
                     <a href="/home" class="block px-2 py-1 text-gray-400 font-semibold md:text-xl hover:text-white">Home</a>
                     <a href="/virtual" class="mt-1 block px-2 py-1 text-white font-semibold md:text-xl">Tour</a>
-                    <a href="/services" class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl ">Services</a>
+                    <a
+            href="/services"
+            class="mt-1 block px-2 py-1 text-gray-400 font-semibold md:text-xl hover:text-white"
+            >Services</a
+          >
+                    <a href="/about" class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl ">About Us</a>
                     <!-- <a href="register" class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl">Register</a> -->
                     <button class="whitespace-nowrap text-white sm:text-base md:text-xl font-semibold tracking-wide bg-green-700 py-2 px-8 rounded-md">Sign Out</button>
                 </nav>
@@ -41,53 +46,57 @@
         </Carousel>
 
         <!-- tour intro -->
-        <div class="-mt-48 sm:-mt-48 md:my-12 text-center lg:text-left pl-6 ">
-            <h1 class="text-white text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wider ">Welcome to Fylo Travels & Tours</h1>
-            <p class="text-gray-400 sm:text-base md:text-xl md:font-normal tracking-wider leading-tight pt-1">We offer most competitive rates and offers for wonderful and beautiful places </p>
+        <div class="-mt-64 md:my-12 text-center sm:text-center lg:text-left md:pl-6">
+            <h1 class="text-white text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight ">Welcome to Fylo Travels & Tours</h1>
+            <p class="text-gray-400 text-xs md:text-xl md:font-normal tracking-wide pt-1">We offer most competitive rates and offers for wonderful and beautiful places </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-36 py-12 ">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-12 mx-2 md:mx-36 py-12 ">
             <div class=" flex flex-col justify-center items-center">
-                <GlobeAltIcon  class="custom-class h-12 w-12 text-green-700" />
-                <h1 class="text-2xl md:text-2xl lg:text-3xl text-white font-semibold tracking-wider my-6 text-center">Unique Destination</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
+                <GlobeAltIcon class="custom-class h-6 md:h-12 w-6 md:w-12 text-green-700" />
+                <h1 class="text-base md:text-2xl lg:text-3xl text-white font-semibold tracking-wide my-3 md:my-6 text-center">Unique Destination</h1>
+                <p class="text-xs md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
             </div>
             <div class=" flex flex-col justify-center items-center">
-                <BuildingOfficeIcon  class="custom-class h-12 w-12 text-green-700" />
-                <h1 class="text-2xl md:text-2xl lg:text-3xl text-white font-semibold tracking-wider my-6 text-center">Ticket Deliveries</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
+                <BuildingOfficeIcon  class="custom-class h-6 md:h-12 w-6 md:w-12 text-green-700" />
+                <h1 class="text-base md:text-2xl lg:text-3xl text-white font-semibold tracking-wide my-3 md:my-6 text-center">Ticket Deliveries</h1>
+                <p class="text-xs md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
             </div>
             <div class=" flex flex-col justify-center items-center">
-                <CheckCircleIcon  class="custom-class h-12 w-12 text-green-700" />
-                <h1 class="text-2xl md:text-2xl lg:text-3xl text-white font-semibold tracking-wider my-6 text-center">Backup Team</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
+                <CheckCircleIcon  class="custom-class h-6 md:h-12 w-6 md:w-12 text-green-700" />
+                <h1 class="text-base md:text-2xl lg:text-3xl text-white font-semibold tracking-wide my-3 md:my-6 text-center">Backup Team</h1>
+                <p class="text-xs md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
             </div>
         </div>
 
-        <div class="mt-24 text-center lg:text-left pl-6 ">
-            <h1 class="text-white text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wider ">Feautured Packages</h1>
-            <p class="text-gray-400 sm:text-base md:text-xl md:font-normal tracking-wider leading-tight pt-1">Our Featured Packages allow you to get away from routine, spend time with family and friends </p>
+        <div class="mt-10 md:mt-24 text-center lg:text-left md:pl-6 ">
+            <h1 class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wider ">Feautured Packages</h1>
+            <p class="text-gray-400 text-xs mx-3 md:mx-0 sm:text-xs md:text-xl md:font-normal tracking-wider leading-tight pt-1">Our Featured Packages allow you to get away from routine, spend time with family and friends </p>
         </div>
 
-        <div class="grid grid-cols-2 gap-12 mx-36 py-12 w-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-12 mx-3 md:mx-36 py-12 w-auto">
             <div v-for="Detail in Details" v-bind:key="Detail" class="">
+                <!-- <router-link :to="Detail.url"> -->
                 <div class="flex flex-col justify-center items-center w-auto">
                     <img :src="Detail.image" class="h-auto w-full rounded-t-none">
                     <div class="bg-white w-full shadow-slate-600 px-6 pt-12">
-                    <h1 class="text-xl sm:text-xl md:text-3xl font-semibold text-black tracking-wide leading-none sm:leading-none"> {{ Detail.header }} </h1>
-                    <h2 class="text-xs sm:text-base md:text-lg lg:text-xl text-gray-500 tracking-wide pt-4 leading-tight sm:leading-tight pb-24"> {{ Detail.text }} </h2>
+                    <h1 class="text-lg sm:text-lg md:text-3xl font-semibold text-black -mt-8 md:-mt-0 tracking-wide leading-none sm:leading-none"> {{ Detail.header }} </h1>
+                    <h2 class="text-xs sm:text-base md:text-lg lg:text-xl text-gray-500 tracking-wide pt-4 leading-tight sm:leading-tight pb-12 md:pb-24"> {{ Detail.text }} </h2>
                     <div class="sm:flex sm:flex-wrap sm:justify-between">
                     <p class="text-green-700 text-xs md:text-xl cursor-pointer float-left">{{ Detail.price }}</p>
-                    <button class="bg-green-700 text-xs md:text-xl text-white px-4 py-2 md:px-6 md:py-2 float-right">{{ Detail.button }}</button>
+                    <router-link :to="Detail.url">
+                    <button class="bg-green-700 text-xs md:text-xl text-white px-4 py-2 mb-1 md:px-6 md:py-2 float-right">{{ Detail.button }}</button>
+                </router-link>
                 </div>
                 </div>
                 </div>
+            <!-- </router-link> -->
             </div>
         </div>
 
-           <div class="my-24 mx-auto pl-6 ">
-            <h1 class=" text-2xl md:text-4xl text-white font-semibold tracking-wider ">Our Trusted Partners</h1>
-            <p class="text-base md:text-xl text-gray-400 font-light tracking-wide my-5 sm:text-center md:w-1/2 md:text-left">For over 10 years, we have been in good partnership with other reputable travel brands across the globe that we have continually teamed up with to provide the best of travel services to our numberous customers.</p>
+           <div class="mt-10 md:mt-24 text-center lg:text-left md:pl-6">
+            <h1 class="text-xl sm:text-xl md:text-4xl lg:text-4xl text-white font-semibold tracking-wider ">Our Trusted Partners</h1>
+            <p class="text-xs px-2 md:px-0 md:text-xl text-gray-400 font-light tracking-wide my-3 md:my-5 sm:text-center md:w-1/2 md:text-left">For over 10 years, we have been in good partnership with other reputable travel brands across the globe that we have continually teamed up with to provide the best of travel services to our numberous customers.</p>
         </div> 
         <carousel :items-to-show="2.75" :autoplay="2000" :wrap-around="true" :transition="500">
             <slide v-for="feedback in feedbacks" :key="feedback">
@@ -97,16 +106,16 @@
                             <blockquote class="text-gray-400 text-base md:text-lg font-light "> {{  feedback.comment  }} </blockquote>
                         </div> -->
 
-                        <figure class="mx-12 pb-6">
-                            <svg aria-hidden="true" class="mx-auto mb-13 w-12 h-12 text-gray-400 dark:text-gray-600" viewbox="0 0 24 27" fill="none" xmins="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
+                        <figure class="mx-2 md:mx-12 mt-12 md:mt-10 mb-12 ">
+                            <svg aria-hidden="true" class="mx-auto mb-13 w-6 md:w-12 h-6 md:h-12 text-gray-400 dark:text-gray-600" viewbox="0 0 24 27" fill="none" xmins="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor" /></svg>
                             <blockquote>
-                                <p class="text-base md:text-lg italic font-medium text-gray-900 dark:text-white">{{  feedback.comment  }}</p>
+                                <p class="text-xs sm:text-xs md:text-lg italic font-thin text-gray-900 dark:text-white">{{  feedback.comment  }}</p>
                             </blockquote>
-                            <figcaption class="flex justify-center items-center mt-6 space-x-3">
-                                <img :src="feedback.image" class="w-6 h-6 rounded-full" />
+                            <figcaption class="flex justify-center items-center mt-6 md:space-x-3">
+                                <img :src="feedback.image" class="w-4 md:w-6 h-4 md:h-6 rounded-full" />
                                 <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                    <cite class="pr-3 font-medium text-gray-900 dark:text-white">{{ feedback.recipient  }}</cite>
-                                    <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">{{ feedback.partner  }}</cite>
+                                    <cite class="pr-3 font-thin md:font-medium text-gray-900 text-xs md:text-xl dark:text-white">{{ feedback.recipient  }}</cite>
+                                    <cite class="pl-3 text-xs md:text-xl font-light text-gray-500 dark:text-gray-400">{{ feedback.partner  }}</cite>
                                 </div>
                             </figcaption>
                         </figure>
@@ -115,7 +124,22 @@
                   <navigation />
                 </template>
         </carousel>
-
+        <div class="mt-10 px-6 pb-10 md:px-0 md:grid md:grid-cols-3 md:gap-3 bg-zinc-800">
+                <p class="text-gray-400 md:pl-16 md:w-96 pt-6 font-thin text-xs md:flex md:flex-col md:col-span-1 md:text-sm lg:text-base tracking-wider leading-tight">Welcome to your one stop travel platform where we love making your journey an experience. We would love to hear from you.</p>
+                <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Contact Information</h1>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">chat with us on Whatsapp : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">Speak to an agent : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs font-thin text-gray-400 tracking-wider mt-3">Need our support : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+            </div>
+            <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Useful Links</h1>
+                <div class="flex flex-col py-3">
+                <a href="/about" class="text-xs font-thin text-gray-400 tracking-wider mb-3">About Us</a>
+                <a href="/virtual" class="text-xs font-thin text-gray-400 tracking-wider">Virtual Tour</a>
+            </div>
+        </div>
+            </div>
     </div>
 </template>
 
@@ -155,25 +179,29 @@ export default {
                  header: 'Luxurious London', 
                 text: 'Join us for 10 days vacation tour to uk', 
                 price: '$45,000' ,
-                button: 'view more'
+                button: 'view more',
+                url: '/packageOne'
             },
                 {image: require('../assets/images/pexels-streetwindy-2108832.jpg'),
                  header: 'Luxurious London', 
                 text: 'Come and experience the beautiful life of California with this specially packed tour.', 
                 price: '$Price on call' ,
-                button: 'view more'
+                button: 'view more',
+                url: '/packageTwo'
             },
                 {image: require('../assets/images/pexels-haley-black-2087391.jpg'),
                  header: 'OBUDU Mountain Resort Christmas Package', 
                 text: 'Experience 5 days/4 nights in the beautiful Obudu Mountain resort this christmas', 
                 price: '$195,000' ,
-                button: 'view more'
+                button: 'view more',
+                url: '/package'
             },
                 {image: require('../assets/images/pexels-julian-lobo-2407070.jpg'),
                  header: 'Luxurious London', 
                 text: 'Join us for 10 days vacation tour to uk', 
                 price: 'Price on call' ,
-                button: 'view more'
+                button: 'view more',
+                url: '/packageThree'
             },
             ],
 
@@ -208,6 +236,7 @@ export default {
 * {
   
     font-family: 'Montserrat' , sans-serif;
+    /* border: 1px solid red; */
 }
 .carousel__slide {
     padding: 5px;

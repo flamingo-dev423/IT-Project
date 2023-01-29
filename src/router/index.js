@@ -4,10 +4,15 @@ import HomeView from '../views/HomeView.vue';
 import Login from '../views/Login.vue';
 import Register from '../views/Register.vue';
 import Virtual from '../views/virtual.vue';
-import Services from '../views/services.vue';
+import About from '../views/about.vue';
 import TicketingReservation from '../views/ticketingReservation.vue';
 import TravelInsurance from '../views/travelInsurance.vue';
 import HolidayPackages from '../views/holidayPackages.vue';
+import Services from '../views/services.vue';
+import Package from '../views/package.vue';
+import PackageOne from '../views/packageOne.vue';
+import PackageTwo from '../views/packageTwo.vue';
+import PackageThree from '../views/packageThree.vue';
 
 const routes = [
   {
@@ -36,6 +41,11 @@ const routes = [
     component: Virtual  
   },
   {
+    path: '/about',
+    name: 'about',
+    component: About  
+  },
+  {
     path: '/services',
     name: 'services',
     component: Services  
@@ -54,6 +64,26 @@ const routes = [
     path: '/holidayPackages',
     name: 'holidayPackages',
     component: HolidayPackages  
+  },
+  {
+    path: '/package',
+    name: 'package',
+    component: Package  
+  },
+  {
+    path: '/packageOne',
+    name: 'packageOne',
+    component: PackageOne  
+  },
+  {
+    path: '/packageTwo',
+    name: 'packageTwo',
+    component: PackageTwo 
+  },
+  {
+    path: '/packageThree',
+    name: 'packageThree',
+    component: PackageThree  
   },
 ]
 

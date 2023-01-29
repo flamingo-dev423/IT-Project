@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full h-full bg-black">
+    <div class="bg-black w-full h-full">
         <header class="bg-black sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 md:px-3 md:py-6">
             <div class="flex items-center justify-between px-4 py-6 sm:p-0">
                 <div>
-                    <img src="../assets/fylo.svg" class="h-8" alt="">
+                    <img src="../assets/fylo.svg" class="h-4 md:h-8" alt="">
                 </div>
                 <div class="sm:hidden">
                     <button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
@@ -15,85 +15,96 @@
                 </div>
             </div>
             <nav :class="isOpen ? 'block' : 'hidden'" class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a href="/home" class="block px-2 py-1 text-gray-400 font-semibold md:text-xl hover:text-white">Home</a>
-                <a href="/virtual" class="mt-1 block px-2 py-1 text-gray-400 hover:text-white font-semibold md:text-xl">Tour</a>
-                <a href="/services" class="mt-1 block px-2 py-1 text-white font-semibold md:text-xl ">Services</a>
+                <a href="/home" class="block px-2 py-1 text-gray-400 font-semibold text-sm md:text-xl hover:text-white">Home</a>
+                <a href="/virtual" class="mt-1 block px-2 py-1 text-gray-400 hover:text-white text-sm font-semibold md:text-xl">Tour</a>
+                <a
+            href="/services"
+            class="mt-1 block px-2 py-1 text-white font-semibold md:text-xl hover:text-white"
+            >Services</a
+          >
+                <a href="/about" class="mt-1 block px-2 py-1 text-gray-400 font-semibold md:text-xl text-sm ">About Us</a>
                 <!-- <a href="register" class="mt-1 block px-2 py-1 text-gray-400 font-semibold hover:text-white md:text-xl">Register</a> -->
-                <button class="whitespace-nowrap text-white sm:text-base md:text-xl font-semibold tracking-wide bg-green-700 py-2 px-8 rounded-md">Sign Out</button>
+                <button class="whitespace-nowrap text-white sm:text-base md:text-xl text-sm font-semibold tracking-wide bg-green-700 py-2 px-8 rounded-md">Sign Out</button>
             </nav>
         </header>
-        
-        <!-- service intro -->
-        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-12 md:mt-24 px-6 ">
-            <img src="../assets/illustration-intro.png" class="w-full hidden md:hidden lg:block" />
-            <div class="text-center lg:text-left">
-                <h1 class="text-white py-6 text-2xl md:text-4xl font-semibold tracking-wider">Fylo Travels and Tours Inc...</h1>
-                <p class="text-gray-400 sm:text-base md:text-xl md:font-light tracking-wider leading-tight">Fylo Inc. is the best travel tour company in Nigeria. We remain a leading travels company in sub-Saharan Africa, established and located in the heart of Lagos, Nigeria since 1998. <br>
-                    <br>
-                    Powered by the expertise of highly skilled, resourceful and innovative staff, the company is breaking new grounds in regular and progressive proportion in its corporate business of curriculum based Education Study tours. <br>
-                    <br>
-                    
-                    Fylo Travels and Tours Ltd is one of the most successful and foremost travel company in Nigeria, delivering customer-focused travel products. We remain the leading travel company in Nigeria that specializes on curriculum-focused educational tour for students within the range of 6 to 17 years. <br>
-                    <br>
-                    
-                    We will appreciate your invitation to discuss your specific tour request with you by calling any of our hotlines 08022235119, 234 805 546 9754 or 234 901 794 2316.</p>
-            </div>
-        </div>
-        <div class="mt-36 ml-6">
-            <h1 class="text-white text-2xl md:text-4xl font-semibold tracking-wider text-center lg:text-left">Why Choose Fylo Travels and Tours Inc.</h1>
-            <p class="text-gray-400 sm:text-base md:text-xl md:font-normal tracking-wider text-center lg:text-left leading-tight pt-6">There are numerous reasons several schools and other corporate bodies chose Fylo Travels and Tours <br> and have never regretted their decision:</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 w-full mt-10 mb-12 px-6 py-6 ">
-            <div class="flex flex-col justify-center items-center px-6 py-6 mx-24 sm:mx-24 md:mx-0 lg:mx-0">
-                <BuildingOfficeIcon  class="custom-class h-12 w-12 text-green-700" />
-                <h1 class="text-2xl md:text-2xl lg:text-4xl text-white font-semibold tracking-wider my-6 text-center">International Partnership</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the Official Country Office and Exclusive Authorized Agent in Nigeria for Kingswood Education & Learning Group and Camp Beaumont and more.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center px-6 py-6 mx-24 sm:mx-24 md:mx-0 lg:mx-0">
-                <GlobeAltIcon  class="custom-class h-12 w-12  text-green-700" />
-                <h1 class="text-2xl md:text-2xl lg:text-4xl text-white font-semibold tracking-wider my-6 text-center">Global Tour Packages</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Our products are curriculum-based vis-a-vis other tour organizers. Our products & packaging goes beyond mere sight-seeing and we ensure all tour products are global brands.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center px-6 py-6 mx-24 sm:mx-24 md:mx-0 lg:mx-0">
-                <BookOpenIcon class="custom-class h-12 w-12  text-green-700 object-center" />
-                <h1 class="text-2xl md:text-2xl lg:text-4xl text-white font-semibold tracking-wider my-6 text-center">Learning Outside the Classroom</h1>
-                <p class="text-base md:text-lg lg:text-xl text-gray-500 text-center font-normal tracking-wider leading-tight">Fylo Travels and Tours Ltd is the first and the only company in the sub Sahara Africa applying the principle of Learning Outside the Classroom to its student.</p>
+
+        <!-- second slide -->
+        <div class=" mb-4">
+            <img src="../assets/images/antonius-smal-AfMbndN8ICM-unsplash.jpg" class="w-full bg-center bg-no-repeat object-cover" style="height: 70vh;"  alt="">
+            <div class="relative -top-80 mx-12 w-fit">
+                <h1 class="uppercase text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-widest">Services</h1>
+                <ul class="flex">
+                    <li @click="$router.push('home')" class="text-gray-400 text-base md:text-lg lg:text-lg hover:cursor-pointer hover:text-white md:font-normal tracking-wide leading-tight">Home</li> <span class="text-white text-xl mx-4"> > </span>
+                    <li @click="$router.push('services')" class="text-gray-400 text-base md:text-lg hover:cursor-pointer hover:text-white lg:text-xl md:font-normal tracking-wide leading-tight">Our Services</li>
+                </ul>
             </div>
         </div>
 
-        <!-- Subscription Section -->
-        <div class="bg-hero-pattern-mobile sm:bg-hero-pattern object-cover bg-center bg-scroll bg-no-repeat sm:bg-center sm:bg-scroll sm:bg-auto sm:bg-no-repeat sm:object-cover ">
-        <div class="content-center py-24 pl-6 ">
+        <!-- Third Slide -->
+        <div class="mx-3 md:mx-32 bg-white py-10 pl-5 md:pl-10 pr-8 md:pr-36 rounded-md shadow shadow-gray-400">
+            <div class="mb-10">
+                <h1 class="text-black text-base md:text-lg font-semibold mb-3">Visa Advisory & Protocol</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">We are able to assist in facilitating your travel visa through professional counsel and advice. Further, we provide ticket delivery to your destination, leaving you with enough time for other pressing matters.</p>
+            </div>
+            <div class="mb-10">
+                <h1  class="text-black text-base md:text-lg font-semibold mb-3">Hotel & Flight Reservation</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">We deliver your ticket to your destination, leaving you with enough time for other pressing matters and also make firm arrangements for hotel accomodation for the duration of your stay to any of our prime destinations.</p>
+            </div>
+            <div class="mb-10">
+                <h1  class="text-black text-base md:text-lg font-semibold mb-3">Packaged Tours & Vacations</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">We organize packaged holidays and tours to all major tourist attractions in Europe, America, South Africa and Nigeria. This services is also available to individual and families.</p>
+            </div>
+            <div class="mb-10">
+                <h1  class="text-black text-base md:text-lg font-semibold mb-3">Corporate & Group Travels</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">Fylo works with corporate organisations to plan hassle free group travels at attractive and subsidized rates for businesses, fan clubs and pilgrimage.</p>
+            </div>
+            <div class="mb-10">
+                <h1 class="text-black text-base md:text-lg font-semibold mb-3">Conference & Event Planning</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">We also organize group travels at attractive and subsidized rates for companies, fan clubs and pligrimage.</p>
+            </div>
             <div class="">
-                <h1 class="text-white text-2xl md:text-4xl font-semibold tracking-wider text-center lg:text-left">Join Our Subscribe List</h1>
+                <h1 class="text-black text-base md:text-lg font-semibold mb-3">Tourism Consultancy & Training</h1>
+                <p class="text-gray-800 text-sm md:text-base font-light">With our experience in Travel and tours, Fylo is able to provide specialised consultancy and advice on a wide range of topical issues relating to the leisure, tourism and entertainment industry.</p>
             </div>
-            <div class=" flex items-center justify-center mt-12 lg:w-1/2 px-12 sm:px-12 md:px-12 lg:px-0">
-                <input type="email" name="email" id="email" placeholder="Enter Your Email To Subscribe" class="w-full bg-gray-200 border focus:border-blue-500 focus:bg-white focus:outline-none rounded-none px-4 py-3" aria-required>
-                <button class="text-white bg-green-700 whitespace-nowrap rounded-none shadow border-none font-semibold px-14 py-3 ml-6 text-xl md:text-2xl uppercase">Send</button>
-            </div>
-     
         </div>
+
+        <!-- Blog Post -->
+        <div class="mx-3 md:mx-32 bg-white mt-16 py-10 pl-5 md:pl-10 pr-8 md:pr-36 rounded-md shadow shadow-gray-400">
+            <h1 class="text-black font-semibold text-lg md:text-xl mb-3">Recents Posts</h1>
+            <p class="font-normal text-sm md:text-base">No Posts Found!</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-10 pb-10 px-6 md:px-0 md:grid md:grid-cols-3 md:gap-3 bg-zinc-800">
+                <p class="text-gray-400 md:pl-16 md:w-96 pt-6 font-thin text-xs md:flex md:flex-col md:col-span-1 md:text-sm lg:text-base tracking-wider leading-tight">Welcome to your one stop travel platform where we love making your journey an experience. We would love to hear from you.</p>
+                <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Contact Information</h1>
+                <p class="text-xs md:text-sm font-thin text-gray-400 tracking-wider mt-3">chat with us on Whatsapp : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs md:text-sm font-thin text-gray-400 tracking-wider mt-3">Speak to an agent : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+                <p class="text-xs md:text-sm font-thin text-gray-400 tracking-wider mt-3">Need our support : <span class="text-blue-700">+234 (0) 708 136 8874</span></p>
+            </div>
+            <div class="md:flex md:flex-col md:col-span-1 ">
+                <h1 class="font-semibold text-md text-white mt-6">Useful Links</h1>
+                <div class="flex flex-col py-3">
+                <a href="/about" class="text-xs md:text-sm font-thin text-gray-400 tracking-wider mb-3">About Us</a>
+                <a href="/virtual" class="text-xs md:text-sm font-thin text-gray-400 tracking-wider">Virtual Tour</a>
+            </div>
+        </div>
+            </div>
     </div>
 
-    </div>
 </template>
 
 <script>
-import { ArrowLongDownIcon, GlobeAltIcon, BookOpenIcon, CheckCircleIcon, BuildingOfficeIcon  } from '@heroicons/vue/24/solid'
 export default {
-    components: {  ArrowLongDownIcon, GlobeAltIcon, BookOpenIcon, CheckCircleIcon, BuildingOfficeIcon  },
     data:function() {
         return {
             isOpen: false,
         }
     }
 }
-
 </script>
 
 <style scoped>
-* {
-  
-    font-family: 'Montserrat' , sans-serif;
-}
+
 </style>

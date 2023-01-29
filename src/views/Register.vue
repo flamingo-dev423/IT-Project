@@ -10,7 +10,7 @@
     <!-- login right banner -->
     <div class="bg-white flex items-center justify-center md:mx-auto md:max-w-md lg:max-w-full w-full md:w-1/2 xl:w-1/3 px-6 lg:px-16 xl:px-12 ">
         <div class="w-full h-100">
-            <img src="../assets/fylo.svg" class="h-10" style="filter: brightness(0) invert(0);" />
+            <img src="../assets/fylo.svg" class="mt-6 md:mt-0 h-6 md:h-10" style="filter: brightness(0) invert(0);" />
             <!-- <h1 class="text-xl font-bold">Login Page</h1> -->
             <h1 class="text-xl md:text-2xl font-bold leading-tight mt-12">Sign Up to your account</h1>
 
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="text-right mt-2">
-                    <a href="#" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Forgot Password</a>
+                    <a href="#" class="text-xs md:text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Forgot Password</a>
                 </div>
 
                 <button  class="w-full block bg-blue-500 hover:bg-blue-400 px-4 py-3 mt-6 rounded-lg font-semibold text-white focus:bg-blue-400 focus:outline-none" type="submit">Sign Up</button>
@@ -52,7 +52,7 @@
                     </div>
                 </button>
 
-                <p class="mt-8">
+                <p class="ml-32 mt-6 text-xs md:text-sm">
              Already have an account?
                     <router-link to="/login" class="text-blue-500 hover:text-blue-700 font-semibold">Sign In</router-link>
                 </p>
